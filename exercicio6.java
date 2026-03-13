@@ -6,27 +6,23 @@ import java.util.Scanner;
 public class exercicio6 {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Digite o número de elementos do vetor: ");
-        int n = scanner.nextInt();
+        Scanner scanner = new Scanner(System.in); {
 
-        int[] vetor = new int[n];
+            System.out.println("Digite a base (em cm): ");
+            double base = scanner.nextDouble();
 
-        System.out.println("Digite os elementos do vetor:");
-        for (int i = 0; i < n; i++) {
-            vetor[i] = scanner.nextInt();
+            System.out.println("Digite a altura (em cm): ");
+            double altura = scanner.nextDouble();
+
+            double area = (base * altura);
+
+            System.out.println("Área do retângulo: " + area + " cm²");
+
+            scanner.close();
+
         }
 
-        int soma = 0;
-        for (int i = 0; i < n; i++) {
-            soma += vetor[i];
-        }
-
-        double media = (double) soma / n;
-
-        System.out.println("A média dos elementos do vetor é: " + media);
-
-        scanner.close();
     }
+
 }
