@@ -1,3 +1,6 @@
+// Nome: Tiago Falco França
+// Matrícula: 1261942635
+
 import java.util.Scanner;
 
 public class exercicio3 {
@@ -23,3 +26,4 @@ public class exercicio3 {
 }
 
 }
+
