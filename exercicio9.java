@@ -4,28 +4,33 @@
 
 import java.util.Scanner;
 
-public class exercicio9 {
-
+   public class exercicio10 {
+    
     public static void main(String[] args) {
-       
-        Scanner scanner = new Scanner(System.in); { 
+        
+        Scanner scanner = new Scanner(System.in); {
 
-            System.out.println("Preço do produto: ");
-            double precoProduto = scanner.nextDouble();
+            System.out.println("Distância (km): ");
+            double distancia = scanner.nextDouble();
 
-            System.out.println("Valor pago: ");
-            double valorPago = scanner.nextDouble();
+            System.out.println("Velocidade média (km/h): ");
+            double velocidade = scanner.nextDouble();
 
-            System.out.println("Troco: " + (valorPago - precoProduto));
+            double tempoHoras = distancia / velocidade;
+            int horas = (int) tempoHoras;
+            int minutos = (int) ((tempoHoras - horas) * 60);
+
+             System.out.println("Tempo estimado: " + horas + " horas e " + minutos + " minutos.");
 
 
-            scanner.close();
-
-
+             scanner.close();    
+    
+    
         }
 
-
+  
     }
-
+  
 
 }
+
